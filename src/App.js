@@ -13,7 +13,7 @@ function Board({ xIsNext, squares, onPlay }) {
     if (calculateWinner(squares) || squares[i]) {
       return;
     }
-    const nextSquares = squares.slice();
+    var nextSquares = squares.slice();
     if (xIsNext) {
       nextSquares[i] = 'X';
     } else {
